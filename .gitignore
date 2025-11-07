@@ -1,0 +1,50 @@
+# === PHP / Composer ===
+vendor/
+composer.lock
+
+# === Environment & Credentials ===
+.env
+.env.local
+.env.*.local
+
+# === System Files ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === IDE / Editor Config ===
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# === Logs & Cache ===
+*.log
+*.cache
+logs/
+cache/
+tmp/
+temp/
+
+# === OS / Misc ===
+*.bak
+*.swp
+*.tmp
+
+# === PHP Specific ===
+# PHPUnit
+.phpunit.result.cache
+.phpunit.cache/
+coverage/
+
+# === Uploads / Generated Files ===
+uploads/
+storage/
+public/uploads/
+public/files/
+
+# === Local Development ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
