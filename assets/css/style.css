@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 10vw;
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #3b82f6;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    color: #cfcfcf;
+    max-width: 650px;
+    margin: 0 auto 0 auto;
+    line-height: 1.6;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.feature {
+    background-color: #2c2c43;
+    padding: 25px;
+    border-radius: 14px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(51, 94, 151, 0.4);
+}
+
+.feature h2 {
+    font-size: 1.3rem;
+    color: #3b82f6;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 0.95rem;
+    color: #bdbdbd;
+}
+
+.cta {
+    margin-top: 50px;
+}
+
+button {
+    background: linear-gradient(90deg, #0e6ce8, #3b82f6);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(51, 94, 151, 0.5);
+}
+
+form {
+    background-color: #2c2c43;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+form h2 {
+    color: #3b82f6;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+form p {
+    color: #bdbdbd;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+form header {
+    margin-bottom: 10px;
+}
+
+#title-form {
+    font-size: 3rem;
+    color: #3b82f6;
+    margin: 0;
+    text-align: center;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 6px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    background-color: #3b3b55;
+    border: 1px solid #4a4a6b;
+    border-radius: 8px;
+    color: white;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+    outline: none;
+}
+
+.input-group.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    font-size: 0.95rem;
+    color: #ccc;
+}
+
+.input-group.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #3b82f6;
+    cursor: pointer;
+    margin: 0;
+}
+
+.input-group.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.input-group.checkbox-group a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.input-group.checkbox-group a:hover {
+    text-decoration: underline;
+}
+
+.submit-btn {
+    width: 100%;
+    background: linear-gradient(90deg, #0e6ce8, #3b82f6);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(51, 94, 151, 0.5);
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+#error-message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #f87171;
+}
+
+footer {
+    text-align: center;
+    margin-top: 5px;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .feature {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 25px;
+        margin: 0 15px;
+    }
+
+    form h2 {
+        font-size: 1.5rem;
+    }
+
+    .submit-btn, .google-btn {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+}
