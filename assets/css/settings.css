@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.settings-container {
+    width: 90%;
+    max-width: 500px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.settings-container h2 {
+    margin-bottom: 25px;
+    color: #1e1e2d;
+    font-size: 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input[readonly] {
+    background: #f2f2f2;
+    color: #666;
+    cursor: not-allowed;
+}
+
+button {
+    background: #3b82f6;
+    color: #fff;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+.message {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #1e40af;
+    font-weight: 600;
+}
+
+@media (max-width: 480px) {
+    .settings-container {
+        padding: 20px;
+    }
+
+    .settings-container h2 {
+        font-size: 1.5rem;
+    }
+
+    input, button {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+}
+
+input:focus, button:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+.toast-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 1000;
+}
+.toast-message.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+.toast-success { background: hsla(226, 80%, 55%, 1.00); }
+.toast-error   { background: #dc2626; }

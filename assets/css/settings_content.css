@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.settings-card {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-left: 230px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.settings-card h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    display: block;
+}
+
+.form-input:focus {
+    border-color: #196ef6;
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #196ef6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-sizing: border-box;
+}
+
+button[type="submit"]:hover {
+    background-color: #3b82f6;
+    transform: translateY(-1px);
+}
+
+.success-message {
+    background-color: #196ef6;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    opacity: 1;
+    animation: fadeOut 2s ease forwards;
+}
+
+.form-input[type="select"],
+select.form-input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23333' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+    padding-right: 2.5rem;
+}
+
+.error-message {
+    background-color: #f87171;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    opacity: 1;
+    animation: fadeOut 2s ease forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
+
+@media (max-width: 992px) {
+    .settings-card {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .settings-card {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .settings-card h1 {
+        font-size: 1.5rem;
+    }
+
+    button[type="submit"] {
+        padding: 0.75rem;
+        font-size: 0.95rem;
+    }
+}
