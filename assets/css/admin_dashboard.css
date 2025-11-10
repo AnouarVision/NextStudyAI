@@ -1,0 +1,241 @@
+.admin-container {
+    margin-left: 250px;
+    padding: 30px;
+    background-color: #f8f9fc;
+    min-height: 100vh;
+    transition: margin-left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.admin-wrapper {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.admin-wrapper h1 {
+    text-align: center;
+    color: #1e1e2d;
+    margin-bottom: 10px;
+}
+
+.section {
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    word-break: break-word;
+    font-size: 14px;
+}
+
+th {
+    background-color: #3b82f6;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f0f0f0;
+}
+
+.status-open {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+.status-in_progress {
+    color: #f59e0b;
+    font-weight: bold;
+}
+
+.status-resolved {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+select {
+    padding: 6px;
+    border-radius: 6px;
+}
+
+button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+.sidebar-user {
+    margin-top: auto;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-avatar-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.user-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+
+.user-role {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.pagination a,
+.pagination span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.pagination a {
+    background-color: #f3f4f6;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+}
+
+.pagination a:hover {
+    background-color: #3b82f6;
+    color: #fff;
+    border-color: #3b82f6;
+}
+
+.pagination a.disabled {
+    background-color: #e5e7eb;
+    color: #9ca3af;
+    border-color: #d1d5db;
+    cursor: default;
+}
+
+.pagination span {
+    font-weight: bold;
+    color: #1e293b;
+}
+
+@media (max-width: 1200px) {
+    .admin-container {
+        padding: 20px;
+    }
+    .admin-wrapper {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 992px) {
+    th, td {
+        padding: 8px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pagination {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .pagination a,
+    .pagination span {
+        width: 100%;
+        justify-content: center;
+    }
+    table {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+    button, select {
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+    .user-avatar-circle {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .pagination a,
+    .pagination span {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+    th, td {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
