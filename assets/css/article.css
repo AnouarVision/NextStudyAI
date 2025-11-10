@@ -1,0 +1,476 @@
+body, html, .article-container, .resources-section {
+    font-family: 'Inter', sans-serif;
+}
+
+.article-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.article-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    font-size: 0.95em;
+}
+
+.article-breadcrumb a {
+    color: #0073ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.article-breadcrumb a:hover {
+    color: #055eca;
+}
+
+.article-breadcrumb span {
+    color: #ccc;
+}
+
+.article-header {
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.article-title {
+    font-size: 3em;
+    color: #1a1a1a;
+    margin: 20px 0;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.article-summary {
+    font-size: 1.15em;
+    color: #666;
+    line-height: 1.8;
+    margin: 20px 0;
+    max-width: 800px;
+}
+
+.article-meta-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.author-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.author-name {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.meta-date {
+    font-size: 0.9em;
+    color: #999;
+}
+
+.article-stats {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.stat {
+    font-size: 0.95em;
+    color: #666;
+    font-weight: 500;
+}
+
+.category-badge {
+    background: linear-gradient(135deg, #0073ff 0%, #2d3ed9 100%);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.article-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 40px;
+}
+
+.article-main {
+    min-height: 400px;
+}
+
+.article-body {
+    font-size: 1.05em;
+    line-height: 1.9;
+    color: #333;
+}
+
+.article-body p {
+    margin-bottom: 20px;
+}
+
+.article-body h2 {
+    font-size: 1.8em;
+    color: #1a1a1a;
+    margin: 40px 0 20px 0;
+    font-weight: 700;
+}
+
+.article-body h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin: 30px 0 15px 0;
+    font-weight: 600;
+}
+
+.article-body ul,
+.article-body ol {
+    margin: 20px 0;
+    margin-left: 30px;
+}
+
+.article-body li {
+    margin-bottom: 10px;
+}
+
+.article-body code {
+    background: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    color: #d63384;
+}
+
+.article-body pre {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.article-body blockquote {
+    border-left: 4px solid #667eea;
+    padding: 15px 20px;
+    background: #f5f7ff;
+    margin: 20px 0;
+    border-radius: 4px;
+    font-style: italic;
+    color: #555;
+}
+
+.article-share {
+    margin: 50px 0;
+    padding: 30px;
+    background: linear-gradient(135deg, #f5f7ff 0%, #f9f7ff 100%);
+    border-radius: 12px;
+    border: 1px solid #e8eaff;
+}
+
+.article-share h3 {
+    margin: 0 0 20px 0;
+    font-size: 1.1em;
+    color: #1a1a1a;
+}
+
+.share-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.share-facebook {
+    background: #1877f2;
+}
+
+.share-facebook:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(24, 119, 242, 0.4);
+}
+
+.share-twitter {
+    background: #000;
+}
+
+.share-twitter:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.share-linkedin {
+    background: #0a66c2;
+}
+
+.share-linkedin:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(10, 102, 194, 0.4);
+}
+
+.share-copy {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.share-copy:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(102, 126, 234, 0.4);
+}
+
+.article-back {
+    margin: 50px 0;
+}
+
+.back-button {
+    display: inline-block;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    color: #764ba2;
+    transform: translateX(-4px);
+}
+
+.article-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.sidebar-card {
+    background: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.sidebar-card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.sidebar-card h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.1em;
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+.category-info {
+    background: linear-gradient(135deg, #0073ff 0%, #2d3ed9 100%);
+    color: white;
+    padding: 12px 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.related-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.related-item {
+    display: block;
+    padding: 12px;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.related-item:hover {
+    background: #f9f9f9;
+    border-color: #667eea;
+    transform: translateX(4px);
+}
+
+.related-item h4 {
+    margin: 0 0 6px 0;
+    font-size: 0.95em;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.related-date {
+    font-size: 0.85em;
+    color: #999;
+    display: block;
+}
+
+.author-card {
+    text-align: center;
+}
+
+.sidebar-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    border: 3px solid #667eea;
+    display: block;
+}
+
+.author-card h3 {
+    margin: 0 0 5px 0;
+}
+
+.author-role {
+    font-size: 0.9em;
+    color: #667eea;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.author-bio {
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .article-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .article-sidebar {
+        order: -1;
+    }
+
+    .article-meta-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .article-stats {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .article-container {
+        padding: 25px 15px;
+    }
+
+    .article-title {
+        font-size: 2.2em;
+    }
+
+    .article-summary {
+        font-size: 1em;
+    }
+
+    .article-body {
+        font-size: 1em;
+        line-height: 1.8;
+    }
+
+    .article-body h2 {
+        font-size: 1.5em;
+    }
+
+    .article-body h3 {
+        font-size: 1.2em;
+    }
+
+    .sidebar-card {
+        padding: 20px;
+    }
+
+    .share-buttons {
+        justify-content: center;
+    }
+
+    .article-meta-header {
+        gap: 15px;
+    }
+
+    .article-stats {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .article-container {
+        padding: 20px 12px;
+    }
+
+    .article-title {
+        font-size: 1.8em;
+    }
+
+    .article-summary {
+        font-size: 0.95em;
+    }
+
+    .article-breadcrumb {
+        font-size: 0.85em;
+    }
+
+    .author-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .article-body code {
+        font-size: 0.9em;
+    }
+
+    .sidebar-card {
+        padding: 15px;
+    }
+
+    .share-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1em;
+    }
+}

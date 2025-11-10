@@ -1,0 +1,341 @@
+.resources-section {
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.resources-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.resources-header h1 {
+    font-size: 2.8em;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.resources-header > p {
+    font-size: 1.1em;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 28px;
+    margin-bottom: 50px;
+}
+
+.resource-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid #f0f0f0;
+}
+
+.resource-card:hover {
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    transform: translateY(-6px);
+    border-color: #e0e0e0;
+}
+
+.card-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: linear-gradient(135deg, #0073ff 0%, #2d3ed9 100%);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 24px;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 1;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.resource-content {
+    padding: 28px;
+    flex: 1;
+}
+
+.resource-card h2 {
+    font-size: 1.45em;
+    color: #1a1a1a;
+    margin-bottom: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+.resource-card:hover h2 {
+    color: #667eea;
+}
+
+.resource-card .summary {
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.7;
+    margin: 0;
+    min-height: 72px;
+}
+
+.resource-footer {
+    padding: 20px 28px 28px;
+    border-top: 1px solid #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    flex: 1;
+}
+
+.author {
+    font-size: 0.9em;
+    color: #555;
+    font-weight: 500;
+}
+
+.date {
+    font-size: 0.9em;
+    color: #999;
+}
+
+.read-more {
+    display: inline-block;
+    background: linear-gradient(135deg, #0073ff 0%, #2d3ed9 100%);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.read-more:hover {
+    transform: translateX(4px);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+}
+
+.no-resources {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.no-resources p {
+    font-size: 1.2em;
+    color: #999;
+    margin: 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    flex-wrap: nowrap;
+    font-family: 'Inter', sans-serif;
+}
+
+.pagination button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: #667eea;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(102, 126, 234, 0.1);
+}
+
+.pagination button:hover:not(:disabled) {
+    background: #f0f4ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.pagination button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.pagination .page-current {
+    font-weight: 600;
+    font-size: 1em;
+    color: #1a1a1a;
+    padding: 0 12px;
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+    .pagination button {
+        width: 38px;
+        height: 38px;
+        font-size: 1em;
+    }
+
+    .pagination .page-current {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .pagination {
+        gap: 6px;
+    }
+
+    .pagination button {
+        width: 34px;
+        height: 34px;
+        font-size: 0.9em;
+    }
+
+    .pagination .page-current {
+        font-size: 0.85em;
+    }
+}
+
+.page-first,
+.page-last,
+.page-prev,
+.page-next {
+    font-size: 1.2em;
+}
+
+.pagination-info {
+    text-align: center;
+    color: #999;
+    font-size: 0.95em;
+    margin-top: 20px;
+}
+
+.pagination-info strong {
+    color: #667eea;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .resources-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .resources-section {
+        margin: 40px auto;
+    }
+
+    .resources-header h1 {
+        font-size: 2.2em;
+    }
+
+    .resources-header > p {
+        font-size: 1em;
+    }
+
+    .resources-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .resource-content {
+        padding: 24px;
+    }
+
+    .resource-footer {
+        padding: 16px 24px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .meta {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .read-more {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-badge {
+        top: 12px;
+        right: 12px;
+        font-size: 0.75em;
+        padding: 5px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .resources-section {
+        padding: 0 15px;
+        margin: 30px auto;
+    }
+
+    .resources-header h1 {
+        font-size: 1.8em;
+    }
+
+    .resources-header > p {
+        font-size: 0.95em;
+    }
+
+    .resource-card h2 {
+        font-size: 1.25em;
+    }
+
+    .resource-content {
+        padding: 20px;
+    }
+
+    .resource-footer {
+        padding: 14px 20px 20px;
+    }
+
+    .pagination {
+        gap: 6px;
+    }
+
+    .page-link {
+        min-width: 36px;
+        height: 36px;
+        font-size: 0.9em;
+    }
+
+    .read-more {
+        padding: 8px 14px;
+        font-size: 0.85em;
+    }
+}

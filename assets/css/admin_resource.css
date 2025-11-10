@@ -1,0 +1,122 @@
+.form-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.form-inline input,
+.form-inline select,
+.form-inline textarea {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-inline input:focus,
+.form-inline select:focus,
+.form-inline textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.form-inline textarea {
+    flex: 1 1 100%;
+    min-height: 80px;
+    resize: vertical;
+}
+
+.form-inline button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3b82f6;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.form-inline button:hover {
+    background-color: #2563eb;
+    transform: translateY(-1px);
+}
+
+.form-inline button:active {
+    transform: translateY(0);
+}
+
+form button.delete-btn {
+    background-color: #ef4444;
+}
+
+form button.delete-btn:hover {
+    background-color: #dc2626;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+table th,
+table td {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: top;
+}
+
+table th {
+    background-color: #3b82f6;
+    font-weight: 600;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+table tr:hover {
+    background-color: #f1f5f9;
+}
+
+.section {
+    margin-bottom: 40px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+@media (max-width: 768px) {
+    .form-inline {
+        flex-direction: column;
+    }
+
+    .form-inline input,
+    .form-inline select,
+    .form-inline textarea,
+    .form-inline button {
+        width: 100%;
+    }
+
+    table th,
+    table td {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
