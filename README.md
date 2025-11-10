@@ -1,5 +1,10 @@
 # NextStudyAI
 
+![PHP](https://img.shields.io/badge/PHP-8.2-%23777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-5.7-%234479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-%2300C853?style=for-the-badge)
+![GitHub Repo](https://img.shields.io/badge/GitHub-NextStudyAI-%23181717?style=for-the-badge&logo=github&logoColor=white)
+
 ![Homepage NextStudy](/assets/images/index_preview.png)
 
 **NextStudy AI** is a web platform that uses artificial intelligence (Gemini) to transform **uploaded documents** into **interactive and intelligent quizzes** in just seconds. The project is server-side developed in **PHP**, with a simple and modular structure designed to be easily expandable.
@@ -17,17 +22,13 @@
 
 ## Main Features
 
-- **File Upload**
-  Supports `.txt`, `.csv` and `.md` formats up to **10MB**.
+- **File Upload**: supports `.txt`, `.csv` and `.md` formats up to **10MB**.
 
-- **Automatic AI Quiz Generation**
-  Analyzes documents and generates **personalized questions** based on content.
+- **Automatic AI Quiz Generation**: analyzes documents and generates **personalized questions** based on content.
 
-- **Review and Sharing**
-  Users can modify, save and share generated quizzes.
+- **Review and Sharing**: users can modify, save and share generated quizzes.
 
-- **Authentication System**
-  Secure access for each user with automatic redirection to personal dashboard.
+- **Authentication System**: secure access for each user with automatic redirection to personal dashboard.
 
 ---
 
@@ -105,3 +106,10 @@ Once a file is selected and the continue button is clicked, you will see the Con
    ```
    http://localhost:8000/nextstudyai
    ```
+
+---
+
+## Contributing
+
+Feel free to fork the repository, open issues or submit pull requests. Please follow the coding style and comment your code where necessary.
+
