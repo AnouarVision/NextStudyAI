@@ -44,10 +44,20 @@ After logging in, the user is redirected to the **dashboard**, where they can ma
 
 ![Dashboard Screenshot](/assets/images/dashboard_preview.png)
 
+### Admin Dashboard (`admin_dashboard.php`)
+Admins can manage users, track support tickets, update statuses, and view a paginated overview of the platform.
+
+![Admin Dashboard Screenshot](/assets/images/dashboard_admin_preview.png)
+
 ### Quiz Configuration with Custom Questions (`dashboard.php`)
 Once a file is selected and the continue button is clicked, you will see the Configure Your Quiz page with all customization options.
 
 ![Configuration Screenshot](/assets/images/configuration_quiz_preview.png)
+
+### Generated Quiz (`quiz.php`)
+After configuring the quiz, users can view the generated quiz with interactive questions and answers.
+
+![Generated Quiz Screenshot](/assets/images/quiz_preview.png)
 
 ---
 
