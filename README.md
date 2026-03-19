@@ -114,7 +114,7 @@ After configuring the quiz, users can view the generated quiz with interactive q
 
 7. **Open the project in your browser:**
    ```
-   http://localhost:8000/nextstudyai
+   http://localhost/nextstudyai
    ```
 
 ---
